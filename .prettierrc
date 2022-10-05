@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": true,
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80
+}
