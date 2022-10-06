@@ -17,9 +17,30 @@ export const ContainerList = styled.main`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 
-
-
-
-  margin-bottom: 100px;
 `;
 
+
+export const ButtonAddMovie = styled.button`
+cursor: pointer;
+padding: 8px ;
+border-radius: 4px;
+width: 182px;
+height: 48px;
+white-space: nowrap;
+text-align: center;
+
+
+background: #151B26;
+border-radius: 4px;
+
+
+font-family: 'Inter';
+
+font-weight: 600;
+font-size: 18px;
+
+color: #FFFFFF;
+display: block;
+
+margin: auto;
+`;
