@@ -16,6 +16,7 @@ export const ContainerList = styled.main`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1.25rem;
+  max-width: 100%;
 `;
 
 export const ButtonAddMovie = styled.button`

@@ -1,16 +1,9 @@
-import {
-  Container,
-  ContainerDescription,
-  Description,
-  ImgBanner,
-  Title,
-} from './styles';
+import { Container, ContainerDescription, Description, Title } from './styles';
 import OneImg from './one-punch-man.svg';
 
 export default function Banner() {
   return (
-    <Container>
-      <ImgBanner src={OneImg} alt="Imagem Bunner" />
+    <Container background={OneImg}>
       <ContainerDescription>
         <Title>one punch man terá 3 temporada</Title>
         <Description>

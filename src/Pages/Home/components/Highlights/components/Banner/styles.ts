@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const Container = styled.main`
-  margin-top: 2.5rem;
+export const Container = styled.main<{ background: string }>`
+  background-image: url(${(props) => props.background});
+  background-size: cover;
+  margin-top: 5rem;
   position: relative;
-  width: 76.8125rem;
-  min-height: 25rem;
-  max-height: 25rem;
+  height: 25rem;
   border-radius: 0.5rem;
   box-shadow: inset 0.4375rem -5.6875rem 21.8125rem 0.625rem #000;
 `;
@@ -27,13 +27,7 @@ export const Description = styled.p`
   color: #bfbfbf;
   line-height: 1.5625rem;
 `;
-export const ImgBanner = styled.img`
-  min-width: 100%;
-  min-height: 25rem;
-  max-height: 25rem;
-  position: absolute;
-  z-index: -1;
-`;
+
 export const ContainerDescription = styled.div`
   position: absolute;
   bottom: 1.125rem;

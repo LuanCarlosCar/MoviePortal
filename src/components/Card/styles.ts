@@ -1,40 +1,31 @@
-import styled, { keyframes } from 'styled-components';
-
-const flutuar = keyframes`
-    0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-10px);
-  }
-  100%{
-    transform: translatey(0px);
-  }
-`;
+import styled from 'styled-components';
 
 export const Container = styled.main`
   height: 300px;
-
   width: 188px;
   box-shadow: inset 0 -6.6875rem 2.8125rem -1.375rem #000;
-  &:hover{
+  transform: translatey(0px);
+  transition-duration: 0.5s;
+  animation-timing-function: ease;
+  cursor: pointer;
 
-    animation: ${flutuar} 2s ease;
+  &:hover {
+    transform: translatey(-10px);
   }
 `;
 export const ContainerImg = styled.div<{ background: string }>`
-  background-image:url(${(props) => props.background});
+  background-image: url(${(props) => props.background});
   box-shadow: inset 0 -2.6875rem 2.8125rem -1.375rem #000;
-  border-radius: 4px;
+  border-radius: 6px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 254px;
-  
+
   p {
     position: relative;
     bottom: -225px;
-    
+
     display: block;
     margin: 0 auto;
     font-family: 'Inter';

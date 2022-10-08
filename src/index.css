@@ -139,3 +139,17 @@ body {
   padding: 0 10rem;
   background: #06090F;
 }
+
+
+  html::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #06090F;
+  }
+
+  html::-webkit-scrollbar-thumb {
+
+    background-color: #00a3ff;
+    border-radius: .5rem;
+    border: 0.1875rem solid #00a3ff;
+  }
