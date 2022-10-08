@@ -1,14 +1,22 @@
-import { Container, ContainerImg, MovieImg, Title } from "./styles";
-import Imgg from './img.svg'
+import { Container, ContainerImg, Title } from './styles';
+import moment from 'moment';
 
-export default function Card() {
-    return (
-        <Container>
-            <ContainerImg>
-                <MovieImg src={Imgg} />
-                <p>1029</p>
-            </ContainerImg>
-            <Title>One Piece</Title>
-        </Container>
-    )
+interface Props {
+  title: string;
+  poster_path: string;
+  release_date: string;
+}
+
+export default function Card(props: Props) {
+  const { title, poster_path, release_date } = props;
+  const url = 'https://image.tmdb.org/t/p/w342';
+
+  return (
+    <Container>
+      <ContainerImg background={url + poster_path}>
+        <p>{moment(release_date).format('MMMM/YYYY')}</p>
+      </ContainerImg>
+      <Title>{title}</Title>
+    </Container>
+  );
 }

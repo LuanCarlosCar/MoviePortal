@@ -1,37 +1,58 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const flutuar = keyframes`
+    0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100%{
+    transform: translatey(0px);
+  }
+`;
 
 export const Container = styled.main`
   height: 300px;
-  
-width: 188px;
-box-shadow: inset 0 -6.6875rem 2.8125rem -1.375rem #000;
 
+  width: 188px;
+  box-shadow: inset 0 -6.6875rem 2.8125rem -1.375rem #000;
+  &:hover{
 
+    animation: ${flutuar} 2s ease;
+  }
 `;
-export const ContainerImg = styled.div`
-position: relative;
-height: 254px;
-p{
-  position: absolute;
-bottom: 0;
-left: 40%;
-  font-family: 'Inter';
+export const ContainerImg = styled.div<{ background: string }>`
+  background-image:url(${(props) => props.background});
+  box-shadow: inset 0 -2.6875rem 2.8125rem -1.375rem #000;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 254px;
+  
+  p {
+    position: relative;
+    bottom: -225px;
+    
+    display: block;
+    margin: 0 auto;
+    font-family: 'Inter';
 
-font-weight: 500;
-font-size: 18px;
+    font-weight: 500;
+    font-size: 18px;
 
-
-color: #BFBFBF;
-text-align: center;
-}
+    color: #bfbfbf;
+    text-align: center;
+  }
 `;
 export const Title = styled.h2`
-margin-top:16px ;
-text-align: center;
-font-family: 'Rubik';
-font-weight: 400;
-font-size: 18px;
-color: #FFFFFF;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
 `;
 
 export const SubTitle = styled.h3`
@@ -47,4 +68,3 @@ export const MovieImg = styled.img`
   position: absolute;
   z-index: -1;
 `;
-

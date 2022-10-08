@@ -15,32 +15,28 @@ export const Title = styled.h2`
 export const ContainerList = styled.main`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-
+  grid-gap: 1.25rem;
 `;
 
-
 export const ButtonAddMovie = styled.button`
-cursor: pointer;
-padding: 8px ;
-border-radius: 4px;
-width: 182px;
-height: 48px;
-white-space: nowrap;
-text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 11.375rem;
+  height: 3rem;
+  white-space: nowrap;
+  text-align: center;
 
+  background: #151b26;
+  border-radius: 0.25rem;
 
-background: #151B26;
-border-radius: 4px;
+  font-family: 'Inter';
 
+  font-weight: 600;
+  font-size: 1.125rem;
 
-font-family: 'Inter';
+  color: #ffffff;
+  display: block;
 
-font-weight: 600;
-font-size: 18px;
-
-color: #FFFFFF;
-display: block;
-
-margin: auto;
+  margin: auto;
 `;
