@@ -41,7 +41,6 @@ export default function MovieList() {
           <Card
             title={movie.title}
             poster_path={movie.poster_path}
-            release_date={movie.release_date}
             id={movie.id}
             key={movie.id}
           />
@@ -58,7 +57,6 @@ export default function MovieList() {
           <Card
             title={movie.title}
             poster_path={movie.poster_path}
-            release_date={movie.release_date}
             id={movie.id}
             key={movie.id}
           />

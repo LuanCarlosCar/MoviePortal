@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-
   padding-top: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  a{
-    text-decoration: none;
+  a {
+    text-decoration: none !important;
   }
 `;
 
 export const ContainerMenuCell = styled.div`
   display: none;
+
   @media (max-width: 1312px) {
     display: block;
   }

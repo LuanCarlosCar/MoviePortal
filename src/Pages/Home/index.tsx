@@ -28,7 +28,6 @@ export default function Home() {
     );
 
     setListMovie(res.data.results);
-
   }
 
   return (

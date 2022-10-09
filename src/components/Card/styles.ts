@@ -13,6 +13,7 @@ export const Container = styled.main`
     transform: translatey(-10px);
   }
 `;
+
 export const ContainerImg = styled.div<{ background: string }>`
   background-image: url(${(props) => props.background});
   box-shadow: inset 0 -2.6875rem 2.8125rem -1.375rem #000;
@@ -37,6 +38,7 @@ export const ContainerImg = styled.div<{ background: string }>`
     text-align: center;
   }
 `;
+
 export const Title = styled.h2`
   margin-top: 1rem;
   text-align: center;
@@ -53,6 +55,7 @@ export const SubTitle = styled.h3`
   font-size: 1.5rem;
   color: #bfbfbf;
 `;
+
 export const MovieImg = styled.img`
   width: 100%;
   height: 100%;

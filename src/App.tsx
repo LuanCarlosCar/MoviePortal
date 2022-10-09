@@ -1,7 +1,7 @@
 import PageRoutes from './Routes';
 
 function App() {
-  return <PageRoutes />
+  return <PageRoutes />;
 }
 
 export default App;

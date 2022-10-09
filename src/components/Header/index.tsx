@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import MenuCell from './MenuCell';
+import MenuCell from './components/MenuCell';
 import {
   Container,
   ContainerMenuCell,
@@ -16,8 +16,9 @@ export default function Header() {
 
       <Wrapper>
         <Navbar>
-          <Link to='/' >       <li>Início</li></Link>
-
+          <Link to="/">
+            <li>Início</li>
+          </Link>
           <li>Lista</li>
           <li>Gênero</li>
 

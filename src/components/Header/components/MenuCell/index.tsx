@@ -35,7 +35,10 @@ export default function MenuCell() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}> <Link to='/' >  Início </Link></MenuItem>
+        <MenuItem onClick={handleClose}>
+          {' '}
+          <Link to="/"> Início </Link>
+        </MenuItem>
         <MenuItem onClick={handleClose}>Lista</MenuItem>
         <MenuItem onClick={handleClose}>Gênero</MenuItem>
         <MenuItem onClick={handleClose}>Novos episódios</MenuItem>
