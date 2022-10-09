@@ -29,7 +29,6 @@ export default function MovieList() {
     );
 
     setListMovie2(res.data.results);
-    console.log('getdata', res.data.results);
   }
 
   function addMovie() {

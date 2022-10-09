@@ -33,6 +33,7 @@ export default function Highlights() {
         `https://api.themoviedb.org/3/movie/${movie.id}?api_key=4e9cbdb6188d564ab3062e486d67953a&language=pt-BR`
       );
 
+      console.log(movie.id)
       list.push(res.data);
     }
 

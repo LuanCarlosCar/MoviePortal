@@ -61,4 +61,7 @@ export const ButtonAddMovie = styled.button`
   display: block;
 
   margin: 2.5rem auto;
+  @media (max-width: 884px) {
+    width: 100%;
+  }
 `;

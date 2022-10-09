@@ -1,9 +1,18 @@
-import { Container, Navbar, Search, TitleLogo, Wrapper } from './styles';
+import MenuCell from './MenuCell';
+import {
+  Container,
+  ContainerMenuCell,
+  Navbar,
+  Search,
+  TitleLogo,
+  Wrapper,
+} from './styles';
 
 export default function Header() {
   return (
     <Container>
       <TitleLogo>Movies</TitleLogo>
+
       <Wrapper>
         <Navbar>
           <li>Início</li>
@@ -14,6 +23,9 @@ export default function Header() {
 
         <Search placeholder="Buscar" type="text" />
       </Wrapper>
+      <ContainerMenuCell>
+        <MenuCell />
+      </ContainerMenuCell>
     </Container>
   );
 }

@@ -5,9 +5,12 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
 
+export const ContainerMenuCell = styled.div`
+  display: none;
   @media (max-width: 1312px) {
-    display: none;
+    display: block;
   }
 `;
 
@@ -27,6 +30,7 @@ export const Navbar = styled.ul`
     font-size: 1.125rem;
     color: #ffff;
     margin-right: 3.125rem;
+    white-space: nowrap;
   }
 
   li:last-child {
@@ -55,4 +59,7 @@ export const Search = styled.input`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 1312px) {
+    display: none;
+  }
 `;
