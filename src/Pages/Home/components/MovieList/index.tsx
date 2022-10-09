@@ -21,8 +21,6 @@ export default function MovieList() {
     getDataListMoviePopular();
   }, []);
 
-  const api_key = '4e9cbdb6188d564ab3062e486d67953a';
-
   async function getDataListMoviePopular() {
     const res = await axios.get(
       `https://api.themoviedb.org/3/movie/popular?api_key=4e9cbdb6188d564ab3062e486d67953a&language=pt-BR&page=3`
@@ -44,6 +42,8 @@ export default function MovieList() {
             title={movie.title}
             poster_path={movie.poster_path}
             release_date={movie.release_date}
+            id={movie.id}
+            key={movie.id}
           />
         ))}
       </ContainerList>
@@ -59,6 +59,8 @@ export default function MovieList() {
             title={movie.title}
             poster_path={movie.poster_path}
             release_date={movie.release_date}
+            id={movie.id}
+            key={movie.id}
           />
         ))}
       </ContainerList>

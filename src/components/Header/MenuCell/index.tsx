@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import { Link } from 'react-router-dom';
 
 export default function MenuCell() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -34,7 +35,7 @@ export default function MenuCell() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Início</MenuItem>
+        <MenuItem onClick={handleClose}> <Link to='/' >  Início </Link></MenuItem>
         <MenuItem onClick={handleClose}>Lista</MenuItem>
         <MenuItem onClick={handleClose}>Gênero</MenuItem>
         <MenuItem onClick={handleClose}>Novos episódios</MenuItem>

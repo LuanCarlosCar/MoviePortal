@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  min-height: 90vh;
+`;
 
 export const Title = styled.h2`
   font-family: 'Rubik';

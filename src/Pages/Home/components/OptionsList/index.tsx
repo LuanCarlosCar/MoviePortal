@@ -33,7 +33,7 @@ export default function OptionsList() {
   return (
     <Container>
       {optionsData.map((option) => (
-        <ButtonFilter>{option}</ButtonFilter>
+        <ButtonFilter key={option}>{option}</ButtonFilter>
       ))}
     </Container>
   );

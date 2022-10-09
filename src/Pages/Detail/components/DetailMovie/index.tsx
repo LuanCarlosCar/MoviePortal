@@ -11,7 +11,7 @@ export default function DetailMovie(props: Props) {
     const { name, path_key } = props
 
     const path = `https://www.youtube.com/embed/${path_key}`
-    console.log('ee', path, name, path_key, props)
+
 
     return (
         <Container>

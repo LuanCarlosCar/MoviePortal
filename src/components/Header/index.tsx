@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import MenuCell from './MenuCell';
 import {
   Container,
@@ -15,9 +16,11 @@ export default function Header() {
 
       <Wrapper>
         <Navbar>
-          <li>Início</li>
+          <Link to='/' >       <li>Início</li></Link>
+
           <li>Lista</li>
           <li>Gênero</li>
+
           <li>Novos episódios</li>
         </Navbar>
 

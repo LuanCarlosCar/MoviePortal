@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
+
   padding-top: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  a{
+    text-decoration: none;
+  }
 `;
 
 export const ContainerMenuCell = styled.div`

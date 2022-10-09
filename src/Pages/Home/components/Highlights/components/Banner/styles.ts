@@ -9,6 +9,7 @@ export const Container = styled.main<{ background: string }>`
   height: 25rem;
   border-radius: 0.5rem;
   box-shadow: inset 0.4375rem -5.6875rem 21.8125rem 0.625rem #000;
+  cursor: pointer;
 `;
 
 export const Title = styled.h2`

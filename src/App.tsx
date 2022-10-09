@@ -1,11 +1,7 @@
-import Detail from './Pages/Detail';
-import Home from './Pages/Home';
+import PageRoutes from './Routes';
 
 function App() {
-  return (<>
-    <Detail />
-
-  </>)
+  return <PageRoutes />
 }
 
 export default App;
