@@ -1,17 +1,18 @@
 import { Container, ContainerDescription, Description, Title } from './styles';
-import OneImg from './one-punch-man.svg';
+interface Props {
+  title: string;
+  backdrop_path: string;
+  overview: string;
+}
+export default function Banner(props: Props) {
+  const { title, backdrop_path, overview } = props;
+  const url = 'https://image.tmdb.org/t/p/original';
 
-export default function Banner() {
   return (
-    <Container background={OneImg}>
+    <Container background={url + backdrop_path}>
       <ContainerDescription>
-        <Title>one punch man terá 3 temporada</Title>
-        <Description>
-          Como relatado anteriormente, a franquia baseada no mangá escrito por
-          ONE e ilustrado por Yusuke Murat a, One Punch Man, divulgou um
-          comunicado confirmando a pr odução de uma terceira temporada da
-          adaptação para o anime […]
-        </Description>
+        <Title>{title}</Title>
+        <Description>{overview}</Description>
       </ContainerDescription>
     </Container>
   );

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.main<{ background: string }>`
   background-image: url(${(props) => props.background});
+  background-position: right 35% bottom 60%;
   background-size: cover;
   margin-top: 5rem;
   position: relative;

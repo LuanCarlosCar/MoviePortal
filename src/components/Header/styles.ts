@@ -5,6 +5,10 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1312px) {
+    display: none;
+  }
 `;
 
 export const TitleLogo = styled.h1`

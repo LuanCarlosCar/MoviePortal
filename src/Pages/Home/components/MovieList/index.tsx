@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Card from '../../../../components/Card';
+import { useListMovie } from '../../context';
 import { ButtonAddMovie, Container, ContainerList, Title } from './styles';
 
 interface Movie {
@@ -11,28 +12,18 @@ interface Movie {
 }
 
 export default function MovieList() {
-  const [listMovie, setListMovie] = useState<Movie[]>([]);
   const [listMovie2, setListMovie2] = useState<Movie[]>([]);
   const [number, setNumber] = useState(18);
 
+  const listMovie = useListMovie();
+
   useEffect(() => {
-    getData();
-    getData2();
+    getDataListMoviePopular();
   }, []);
 
   const api_key = '4e9cbdb6188d564ab3062e486d67953a';
 
-  async function getData() {
-    const res = await axios.get(
-      `https://api.themoviedb.org/3/movie/popular?api_key=4e9cbdb6188d564ab3062e486d67953a&language=pt-BR&page=1`
-    );
-
-    setListMovie(res.data.results);
-    console.log('getdata', res.data.results);
-    return;
-  }
-
-  async function getData2() {
+  async function getDataListMoviePopular() {
     const res = await axios.get(
       `https://api.themoviedb.org/3/movie/popular?api_key=4e9cbdb6188d564ab3062e486d67953a&language=pt-BR&page=3`
     );
@@ -42,7 +33,7 @@ export default function MovieList() {
   }
 
   function addMovie() {
-    setNumber(number === 12 ? 18 : 12);
+    setNumber(number !== 12 ? 12 : 18);
   }
 
   return (
@@ -57,7 +48,7 @@ export default function MovieList() {
           />
         ))}
       </ContainerList>
-      {listMovie.length === 12 ? (
+      {number === 12 ? (
         <ButtonAddMovie onClick={addMovie}>Ver mais</ButtonAddMovie>
       ) : (
         <ButtonAddMovie onClick={addMovie}>Ver menos</ButtonAddMovie>

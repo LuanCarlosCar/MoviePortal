@@ -14,9 +14,30 @@ export const Title = styled.h2`
 
 export const ContainerList = styled.main`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1.25rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   max-width: 100%;
+
+  @media (max-width: 1542px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 1345px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 1128px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+  }
+
+  @media (max-width: 884px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 730px) {
+    display: block;
+  }
 `;
 
 export const ButtonAddMovie = styled.button`
@@ -39,5 +60,5 @@ export const ButtonAddMovie = styled.button`
   color: #ffffff;
   display: block;
 
-  margin: auto;
+  margin: 2.5rem auto;
 `;

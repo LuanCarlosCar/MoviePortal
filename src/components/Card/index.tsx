@@ -31,7 +31,7 @@ export default function Card(props: Props) {
   return (
     <Container>
       <ContainerImg background={url + poster_path}>
-        <p>{moment(release_date).format('MMMM/YYYY')}</p>
+        {/* <p>{moment(release_date).format('MMMM/YYYY')}</p> */}
       </ContainerImg>
       <Title>{title}</Title>
     </Container>
